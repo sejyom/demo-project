@@ -1,0 +1,10 @@
+# application-mysql.yml include
+spring:
+  profiles:
+    include: -mysql
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+

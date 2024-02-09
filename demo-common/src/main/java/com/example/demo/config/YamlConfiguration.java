@@ -5,11 +5,9 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @PropertySource(
-        ignoreResourceNotFound = true,
-        value = {
-                "classpath:application-mysql.properties"
-        }
+        value = "classpath:application-mysql.yml",
+        factory = YamlLoadFactory.class
 )
 // used to include application-mysql.properties for module 'demo-common'
-public class PropertiesConfiguration {
+public class YamlConfiguration {
 }

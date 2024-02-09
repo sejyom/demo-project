@@ -1,0 +1,30 @@
+# DB
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: root
+    password: root!@#
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# JPA 설정
+  jpa:
+    show-sql: true # 콘솔창에 쿼리문 출력
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true # sql문 포맷
+        default_batch_fetch_size: 500 # 일대다 컬렉션 조회 시 성능 최적화
+    open-in-view: false # 영속성 컨텍스트의 생존 범위를 트랜잭션 범위로 한정(OSIV)
+
+  # 파일 크기 제한
+  servlet:
+    multipart:
+      max-file-size: 10MB # 파일 업로드 요청 시 하나의 파일 크기를 제한
+      max-request-size: 100MB # 파일 업로드 요청 시 전체 파일 크기를 제한
+
+# 콘솔창에 조건에 바인딩되 값 및 조회 결과 출력
+logging:
+  level:
+    org.hibernate.type: trace
+
