@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.example.demo.config.yaml;
 
 import jakarta.annotation.Nullable;
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
@@ -8,7 +8,6 @@ import org.springframework.core.io.support.EncodedResource;
 import org.springframework.core.io.support.PropertySourceFactory;
 import org.springframework.util.StringUtils;
 
-import java.io.IOException;
 import java.util.Objects;
 import java.util.Properties;
 

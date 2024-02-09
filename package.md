@@ -1,15 +1,26 @@
-### 패키지 구조(도메인형 패키지)
-- com
-    - example
-      - demo
-          - api(외부에 제공할 api)
-          - domain(핵심 비즈니스 로직)
-          -  global(프로젝트 전반에 사용할 클래스)
-              - config(각종 설정 클래스)
-              - error(예외 처리 및 예외)
-              - jwt(jwt 기반 인증 처리)
-              - interceptor(인증 인가 interceptor)
-              - resolver(accessToken 정보를 DTO로 받을 수 있게 리졸버로 구현)
-              - util(유틸성 클래스 집합)
-          - infra(sms, email, file 등)
-          - web(OAuth2, CORS)
+- root
+  - demo-common
+    - domain
+      - service
+      - repository
+      - entity
+    - infra
+      - sms
+      - email
+      - file
+    - global
+      - error
+      - resolver
+      - util
+
+  - demo-web()
+    - api
+      - controller
+      - dto
+    - global
+      - interceptor
+      - config
+      - jwt
+    - web
+      - cors
+      - oauth2

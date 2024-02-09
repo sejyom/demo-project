@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.example.demo.config.yaml;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -8,6 +8,6 @@ import org.springframework.context.annotation.PropertySource;
         value = "classpath:application-mysql.yml",
         factory = YamlLoadFactory.class
 )
-// used to include application-mysql.properties for module 'demo-common'
+// used to include application-mysql.yml for module 'demo-common'
 public class YamlConfiguration {
 }
