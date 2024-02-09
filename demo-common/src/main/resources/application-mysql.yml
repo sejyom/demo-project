@@ -1,8 +1,8 @@
 # DB
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/demo?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
-    username: root
+    url: ENC(gCjaSeiCVvFsvVxv09npObiEYRW9JQ9/b+Bdxe7Vabcv/J+ALWaWpTzIFsp2Z/qZMKhrn6ZgLBSQDt332tv9V2c7CfuTciCtVs6uknPc0RJ4ZW8YdXgopYPF5Rve14XselGhA5zlonC5icuuqvKXFGwMeDtvf0m2j5dKCXuf7mI=)
+    username: ENC(iIeTHlWPX67a6+JppTXzVA==)
     password: ENC(Xpe6iF2KhNytrLZqN5mGBg==)
     driver-class-name: com.mysql.cj.jdbc.Driver
 
