@@ -2,8 +2,8 @@
 spring:
   datasource:
     url: ENC(gCjaSeiCVvFsvVxv09npObiEYRW9JQ9/b+Bdxe7Vabcv/J+ALWaWpTzIFsp2Z/qZMKhrn6ZgLBSQDt332tv9V2c7CfuTciCtVs6uknPc0RJ4ZW8YdXgopYPF5Rve14XselGhA5zlonC5icuuqvKXFGwMeDtvf0m2j5dKCXuf7mI=)
-    username: ENC(iIeTHlWPX67a6+JppTXzVA==)
-    password: ENC(Xpe6iF2KhNytrLZqN5mGBg==)
+    username: ENC(vVQaP7O2a8u/U0Fk2VqezA==)
+    password: ENC(XZ6iCANLg/DsDuU9ZxCj2Q==)
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 # JPA 설정
@@ -27,6 +27,15 @@ spring:
 logging:
   level:
     org.hibernate.type: trace
+    com.demo: debug #개발 환경
+    # com.demo: info #운영 환경
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000 # 5 sec
 
 jasypt:
   password: ${PASSWORD}

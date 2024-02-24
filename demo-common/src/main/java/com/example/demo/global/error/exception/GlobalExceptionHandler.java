@@ -1,6 +1,5 @@
-package com.example.demo.global.error;
+package com.example.demo.global.error.exception;
 
-import com.example.demo.global.error.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

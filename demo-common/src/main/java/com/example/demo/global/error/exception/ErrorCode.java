@@ -1,4 +1,4 @@
-package com.example.demo.global.error;
+package com.example.demo.global.error.exception;
 
 import lombok.Getter;
 import org.springframework.http.HttpStatus;

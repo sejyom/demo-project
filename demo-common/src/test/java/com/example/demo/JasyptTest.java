@@ -8,14 +8,14 @@ public class JasyptTest {
     @Test
     public void jasyptTest() {
 
-        String password = ""; //jasypt password
+        String password = "ckazmfozj=="; //jasypt password
 
         PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         encryptor.setPoolSize(4);
         encryptor.setPassword(password);
         encryptor.setAlgorithm("PBEWithMD5AndTripleDES");
 
-        String content = ""; //암호화 할 내용
+        String content = "root"; //암호화 할 내용
         String encryptedContent = encryptor.encrypt(content); //암호화
         String decryptedContent = encryptor.decrypt(encryptedContent); //복호화
 
